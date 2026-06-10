@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <!-- Cabeçalho -->
+        <tr>
+            <td>
+                <img src="./IMG/logo.png" alt="Logo" width="200" >
+            </td>
+
+            <td align="right">
+                    <a href="index.html"><h1>Home</h1></a>
+                    <a href="quem-somos.html"><h1>Quem Somos</h1></a>
+                    <a href="contato.html"><h1>Contato</h1></a>
+            </td>
+        </tr>
+        <!-- Conteúdo central -->
+         <tr>
+            <td colspan="2" align="center">
+                <h2>Contato</h2>
+                <p>
+                    <strong>Email:</strong>
+
+                </p>
+                <hr>
+                <form action="enviar_contato.php" method="post">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </td>
+         </tr>
+
+         <!-- Rodapé -->
+            <tr>
+                <td colspan="2" align="center">
+                   <strong> 2023 Instituição. Todos os direitos reservados.</strong>
+                </td>
+            </tr>
+
+    </table>
+</body>
